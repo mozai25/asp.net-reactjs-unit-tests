@@ -8,13 +8,6 @@ namespace ReactBackEnd.Controllers
     [Route("{controller}/{action}/{id?}")]
     public class ShopController : Controller
     {
-        public List<WeatherForecast>? list;
-        
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         [HttpGet]
         public async Task<JsonResult> Categories()
         {
